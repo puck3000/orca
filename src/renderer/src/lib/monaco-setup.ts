@@ -15,6 +15,7 @@ import { registerNimLanguage } from './monaco-languages/register-nim'
 import { registerQuartoLanguage } from './monaco-languages/register-quarto'
 import { registerShellMarkdownAliases } from './monaco-languages/register-shell-markdown-aliases'
 import { registerSvelteLanguage } from './monaco-languages/register-svelte'
+import { registerTaxiLanguage } from './monaco-languages/register-taxi'
 import { registerTypstLanguage } from './monaco-languages/register-typst'
 import { registerVueLanguage } from './monaco-languages/register-vue'
 import { registerZigLanguage } from './monaco-languages/register-zig'
@@ -75,6 +76,7 @@ runMonacoSetupSteps([
   ['Typst language registration', () => registerTypstLanguage(monaco)],
   ['Zig language registration', () => registerZigLanguage(monaco)],
   ['JSONL language registration', () => registerJsonlLanguage(monaco)],
+  ['Taxi language registration', () => registerTaxiLanguage(monaco)],
   ['Quarto language registration', () => registerQuartoLanguage(monaco)],
   ['shell Markdown alias registration', () => registerShellMarkdownAliases(monaco)],
   ['delayer cancellation guard', installMonacoDelayerCancellationGuard],
