@@ -108,6 +108,8 @@ const EXT_TO_LANGUAGE: Record<string, string> = {
   '.nimble': 'nim',
   '.lean': 'lean',
   '.typ': 'typst',
+  // Taxi timesheets (sephii/taxi).
+  '.tks': 'taxi',
   '.tf': 'hcl',
   '.hcl': 'hcl',
   '.abap': 'abap',

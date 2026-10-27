@@ -20,6 +20,11 @@ describe('detectLanguage', () => {
     expect(detectLanguage('packages/app.nimble')).toBe('nim')
   })
 
+  it('maps Taxi timesheets to the taxi language id', () => {
+    expect(detectLanguage('zebra/2026/10.tks')).toBe('taxi')
+    expect(detectLanguage('C:\\timesheets\\2026\\10.TKS')).toBe('taxi')
+  })
+
   it.each([
     'Main.lean',
     'lakefile.lean',
